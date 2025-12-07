@@ -1,0 +1,133 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "Fluent " .. Fluent.Version,
+    SubTitle = "by IOER HUB",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Darker",
+    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+})
+
+--Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
+local Tabs = {
+    Main = Window:AddTab({ Title = "FREE", Icon = "airplay" }),
+    Vip = Window:AddTab({ Title = "PREMIUM", Icon = "box" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
+
+local Options = Fluent.Options
+
+do end
+    Fluent:Notify({
+        Title = "Notification",
+        Content = "Notification Alert",
+        SubContent = "Thank You For Use This Script", -- Optional
+        Duration = 5 -- Set to nil to make the notification not disappear
+    })
+
+
+
+    Tabs.Main:AddParagraph({
+        Title = "Intruction",
+        Content = "This is FREE Version"
+    })
+
+    Tabs.Vip:AddParagraph({
+        Title = "Intruction",
+        Content = "Better than FREE Version"
+    })
+
+
+    Tabs.Main:AddButton({
+        Title = "FREE",
+        Description = "This is only 50% of the script from IOER Hub, if you want 100%, use the PREMIUM version.",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/FREE/refs/heads/main/IOER%20HUB%20FREE"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Vip:AddButton({
+        Title = "PREMIUM",
+        Description = "100% IOER HUB Script!",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/PREMIUM/refs/heads/main/KEYS%20SYSTEM"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+-- SaveManager (Allows you to have a configuration system)end
+-- InterfaceManager (Allows you to have a interface managment system)
+
+-- Hand the library over to our managers
+SaveManager:SetLibrary(Fluent)
+InterfaceManager:SetLibrary(Fluent)
+
+-- Ignore keys that are used by ThemeManager.
+-- (we dont want configs to save themes, do we?)
+SaveManager:IgnoreThemeSettings()
+
+-- You can add indexes of elements the save manager should ignore
+SaveManager:SetIgnoreIndexes({})
+
+-- use case for doing it this way:
+-- a script hub could have themes in a global folder
+-- and game configs in a separate folder per game
+InterfaceManager:SetFolder("FluentScriptHub")
+SaveManager:SetFolder("FluentScriptHub/specific-game")
+
+InterfaceManager:BuildInterfaceSection(Tabs.Settings)
+SaveManager:BuildConfigSection(Tabs.Settings)
+
+
+Window:SelectTab(1)
+
+Fluent:Notify({
+    Title = "Fluent",
+    Content = "The script has been loaded.",
+    Duration = 8
+})
+
+-- You can use the SaveManager:LoadAutoloadConfig() to load a config
+-- which has been marked to be one that auto loads!
+SaveManager:LoadAutoloadConfig()
+
+print("Upgrade Your Script To Be Able To Use 100% Of The Script")
+print("Created By IOER Hub, pastebin.com/u/ty4rds")
