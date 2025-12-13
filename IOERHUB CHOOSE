@@ -23,8 +23,8 @@ local Options = Fluent.Options
 
 do end
     Fluent:Notify({
-        Title = "Notification",
-        Content = "Notification Alert",
+        Title = "Notification Alert",
+        Content = "Message From IOER HUB",
         SubContent = "Thank You For Use This Script", -- Optional
         Duration = 5 -- Set to nil to make the notification not disappear
     })
@@ -120,7 +120,7 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
 
 Fluent:Notify({
-    Title = "Fluent",
+    Title = "Information",
     Content = "The script has been loaded.",
     Duration = 8
 })
