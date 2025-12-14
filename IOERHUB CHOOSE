@@ -16,6 +16,7 @@ local Window = Fluent:CreateWindow({
 local Tabs = {
     Main = Window:AddTab({ Title = "FREE", Icon = "airplay" }),
     Vip = Window:AddTab({ Title = "PREMIUM", Icon = "box" }),
+	Upd = Window:AddTab({ Title = "NEW UPDATE", Icon = "check" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -38,7 +39,12 @@ do end
 
     Tabs.Vip:AddParagraph({
         Title = "Intruction",
-        Content = "Better than FREE Version"
+        Content = "This Is PREMIUM Version"
+    })
+
+    Tabs.Upd:AddParagraph({
+        Title = "Intruction",
+        Content = "Latest Updates Are Here!"
     })
 
 
@@ -92,6 +98,30 @@ do end
         end
     })
 
+    Tabs.Upd:AddButton({
+        Title = "HUB-1",
+        Description = "100% FREE And No Key",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Update/refs/heads/main/IOERHUB"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
 
 -- SaveManager (Allows you to have a configuration system)end
 -- InterfaceManager (Allows you to have a interface managment system)
