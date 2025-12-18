@@ -14,7 +14,7 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "FREE", Icon = "airplay" }),
+    Main = Window:AddTab({ Title = "Mobile", Icon = "airplay" }),
     Vip = Window:AddTab({ Title = "PREMIUM", Icon = "box" }),
 	Upd = Window:AddTab({ Title = "NEW UPDATE", Icon = "check" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
@@ -34,7 +34,7 @@ do end
 
     Tabs.Main:AddParagraph({
         Title = "Intruction",
-        Content = "This is FREE Version"
+        Content = "This is For Mobile User"
     })
 
     Tabs.Vip:AddParagraph({
@@ -49,13 +49,13 @@ do end
 
 
     Tabs.Main:AddButton({
-        Title = "FREE",
-        Description = "This is only 50% of the script from IOER Hub, if you want 100%, use the PREMIUM version.",
+        Title = "Mobile",
+        Description = "100% Script, More Script Is Coming",
         Callback = function()
             Window:Dialog({
                 Title = "Infinite yield",
                 Content = "PowerFull Script",
-                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/FREE/refs/heads/main/IOER%20HUB%20FREE"))()
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Rayfield/refs/heads/main/Mobile"))()
                     {
                         Title = "Confirm",
                         Callback = function(v)
