@@ -17,6 +17,7 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Mobile", Icon = "airplay" }),
     Vip = Window:AddTab({ Title = "PC", Icon = "box" }),
 	Upd = Window:AddTab({ Title = "NEW UPDATE", Icon = "check" }),
+    New = Window:AddTab({ Title = "Credit", Icon = "hammer" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -45,6 +46,31 @@ do end
     Tabs.Upd:AddParagraph({
         Title = "Intruction",
         Content = "Latest Updates Are Here!"
+    })
+
+    Tabs.New:AddParagraph({
+        Title = "Builder",
+        Content = " Owner IOER HUB "
+    })
+
+    Tabs.New:AddParagraph({
+        Title = "programmer",
+        Content = " Owner IOER HUB "
+    })
+
+    Tabs.New:AddParagraph({
+        Title = "Idea",
+        Content = " Faren/rex_del2 "
+    })
+
+    Tabs.New:AddParagraph({
+        Title = "Link Script",
+        Content = "pastebin.com/u/ty4rds"
+    })
+
+    Tabs.New:AddParagraph({
+        Title = "Script Search",
+        Content = "Youtube | Pastebin.com | Scriptblox | Rscripts | Google"
     })
 
 
