@@ -50,17 +50,17 @@ do end
 
     Tabs.New:AddParagraph({
         Title = "Builder",
-        Content = " Owner IOER HUB "
+        Content = "Owner IOER HUB"
     })
 
     Tabs.New:AddParagraph({
-        Title = "programmer",
-        Content = " Owner IOER HUB "
+        Title = "Programmer",
+        Content = "Owner IOER HUB"
     })
 
     Tabs.New:AddParagraph({
         Title = "Idea",
-        Content = " Faren/rex_del2 "
+        Content = "Faren/rex_del2"
     })
 
     Tabs.New:AddParagraph({
@@ -71,6 +71,16 @@ do end
     Tabs.New:AddParagraph({
         Title = "Script Search",
         Content = "Youtube | Pastebin.com | Scriptblox | Rscripts | Google"
+    })
+
+    Tabs.New:AddParagraph({
+        Title = "Member Premium IOER HUB",
+        Content = "Faren | Ilyas | Zafran | Dicky"
+    })
+
+    Tabs.New:AddParagraph({
+        Title = "important information",
+        Content = "This script is still in testing!, if there are any bugs or anything like that, sorry."
     })
 
 
