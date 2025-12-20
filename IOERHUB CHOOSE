@@ -49,7 +49,7 @@ do end
 
 
     Tabs.Main:AddButton({
-        Title = "Mobile",
+        Title = "FREE",
         Description = "100% Script, More Script Is Coming",
         Callback = function()
             Window:Dialog({
@@ -124,7 +124,7 @@ do end
     })
 
     Tabs.Upd:AddButton({
-        Title = "HUB-1",
+        Title = "UPDATE 1",
         Description = "100% FREE And No Key",
         Callback = function()
             Window:Dialog({
