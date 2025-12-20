@@ -15,7 +15,7 @@ local Window = Fluent:CreateWindow({
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Mobile", Icon = "airplay" }),
-    Vip = Window:AddTab({ Title = "PREMIUM", Icon = "box" }),
+    Vip = Window:AddTab({ Title = "PC", Icon = "box" }),
 	Upd = Window:AddTab({ Title = "NEW UPDATE", Icon = "check" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
@@ -75,12 +75,37 @@ do end
 
     Tabs.Vip:AddButton({
         Title = "PREMIUM",
-        Description = "100% IOER HUB Script!",
+        Description = "100% IOER HUB Script! And keyless",
         Callback = function()
             Window:Dialog({
                 Title = "Infinite yield",
                 Content = "PowerFull Script",
                 Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/PREMIUM/refs/heads/main/KEYS%20SYSTEM"))()
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Vip:AddButton({
+        Title = "FREE",
+        Description = "50% IOER HUB Script!",
+        Callback = function()
+            Window:Dialog({
+                Title = "Infinite yield",
+                Content = "PowerFull Script",
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/FREE/refs/heads/main/IOER%20HUB%20FREE"))()
                     {
                         Title = "Confirm",
                         Callback = function(v)
