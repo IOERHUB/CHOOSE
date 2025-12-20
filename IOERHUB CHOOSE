@@ -86,7 +86,7 @@ do end
 
     Tabs.Main:AddButton({
         Title = "PREMIUM",
-        Description = "100% Script, More Script Is Coming",
+        Description = "100% Script, Keyless",
         Callback = function()
             Window:Dialog({
                 Title = "Infinite yield",
