@@ -85,7 +85,7 @@ do end
 
 
     Tabs.Main:AddButton({
-        Title = "FREE",
+        Title = "PREMIUM",
         Description = "100% Script, More Script Is Coming",
         Callback = function()
             Window:Dialog({
@@ -108,6 +108,32 @@ do end
             })
         end
     })
+
+    Tabs.Main:AddButton({
+        Title = "FREE",
+        Description = "50% Script, Coming Soon!",
+        Callback = function()
+            Window:Dialog({
+                Title = "Coming Soon!",
+                Content = "Please wait, Until updated!",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function(v)
+                            print("Next Update,Plase Wait")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function(v)
+                            print("Cancelled,Are You Sure?")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
 
     Tabs.Vip:AddButton({
         Title = "PREMIUM",
