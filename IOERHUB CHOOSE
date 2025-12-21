@@ -161,13 +161,13 @@ do end
     })
 
     Tabs.Vip:AddButton({
-        Title = "FREE",
-        Description = "50% IOER HUB Script!",
+        Title = "FREE-Release",
+        Description = "Beta Tester Script!",
         Callback = function()
             Window:Dialog({
                 Title = "Infinite yield",
                 Content = "PowerFull Script",
-                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/FREE/refs/heads/main/IOER%20HUB%20FREE"))()
+                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Main/refs/heads/main/Windows"))()
                     {
                         Title = "Confirm",
                         Callback = function(v)
