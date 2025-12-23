@@ -161,7 +161,7 @@ do end
     })
 
     Tabs.Vip:AddButton({
-        Title = "FREE-Release",
+        Title = "RELEASE",
         Description = "Beta Tester Script!",
         Callback = function()
             Window:Dialog({
