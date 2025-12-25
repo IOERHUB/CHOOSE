@@ -1,250 +1,79 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-local Window = Fluent:CreateWindow({
-    Title = "Select Scripts",
-    SubTitle = "pastebin.com/u/ty4rds",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(580, 460),
-    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Darker",
-    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+local Window = Rayfield:CreateWindow({
+   Name = "🌌 IOER HUB | New Update 📢",
+   LoadingTitle = "Select Scripts",
+   LoadingSubtitle = "By IOER HUB",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Example Hub"
+   },
 })
 
---Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
-local Tabs = {
-    Main = Window:AddTab({ Title = "Mobile", Icon = "airplay" }),
-    Vip = Window:AddTab({ Title = "PC", Icon = "box" }),
-	Upd = Window:AddTab({ Title = "NEW UPDATE", Icon = "check" }),
-    New = Window:AddTab({ Title = "Credit", Icon = "hammer" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
-}
+local MVSD = Window:CreateTab("🧍 Creadit", nil)
+local MainTab = Window:CreateTab("📱 Mobile", nil)
+local Troll = Window:CreateTab("🖥️ Windows", nil)
+local Jail = Window:CreateTab("📰 Change Logs", nil)
+local MainSection = MainTab:CreateSection("100% Script And Keyless")
 
-local Options = Fluent.Options
-
-do end
-    Fluent:Notify({
-        Title = "Notification Alert",
-        Content = "Message From IOER HUB",
-        SubContent = "Thank You For Use This Script", -- Optional
-        Duration = 5 -- Set to nil to make the notification not disappear
-    })
-
-
-
-    Tabs.Main:AddParagraph({
-        Title = "Intruction",
-        Content = "This is For Mobile User"
-    })
-
-    Tabs.Vip:AddParagraph({
-        Title = "Intruction",
-        Content = "This Is PREMIUM Version"
-    })
-
-    Tabs.Upd:AddParagraph({
-        Title = "Intruction",
-        Content = "Latest Updates Are Here!"
-    })
-
-    Tabs.New:AddParagraph({
-        Title = "[Builder]",
-        Content = "Owner IOER HUB"
-    })
-
-    Tabs.New:AddParagraph({
-        Title = "[Programmer]",
-        Content = "Owner IOER HUB"
-    })
-
-    Tabs.New:AddParagraph({
-        Title = "[Idea]",
-        Content = "Faren/rex_del2"
-    })
-
-    Tabs.New:AddParagraph({
-        Title = "[Link Script]",
-        Content = "pastebin.com/u/ty4rds"
-    })
-
-    Tabs.New:AddParagraph({
-        Title = "[Script Search]",
-        Content = "Youtube | Pastebin.com | Scriptblox | Rscripts | Google"
-    })
-
-    Tabs.New:AddParagraph({
-        Title = "[Member Premium IOER HUB]",
-        Content = "Faren | Ilyas | Zafran | Dicky"
-    })
-
-    Tabs.New:AddParagraph({
-        Title = "[important information]",
-        Content = "This script is still in testing!, if there are any bugs or anything like that, sorry."
-    })
-
-
-    Tabs.Main:AddButton({
-        Title = "PREMIUM",
-        Description = "100% Script And Keyless",
-        Callback = function()
-            Window:Dialog({
-                Title = "Infinite yield",
-                Content = "PowerFull Script",
-                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Rayfield/refs/heads/main/Mobile"))()
-                    {
-                        Title = "Confirm",
-                        Callback = function(v)
-                            print("Next Update,Plase Wait")
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function(v)
-                            print("Cancelled,Are You Sure?")
-                        end
-                    }
-                }
-            })
-        end
-    })
-
-    Tabs.Main:AddButton({
-        Title = "FREE",
-        Description = "50% Script, Coming Soon!",
-        Callback = function()
-            Window:Dialog({
-                Title = "Coming Soon!",
-                Content = "Please wait, Until updated!",
-                Buttons = {
-                    {
-                        Title = "Confirm",
-                        Callback = function(v)
-                            print("Next Update,Plase Wait")
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function(v)
-                            print("Cancelled,Are You Sure?")
-                        end
-                    }
-                }
-            })
-        end
-    })
-
-
-    Tabs.Vip:AddButton({
-        Title = "PREMIUM",
-        Description = "100% IOER HUB Script! And keyless",
-        Callback = function()
-            Window:Dialog({
-                Title = "Infinite yield",
-                Content = "PowerFull Script",
-                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/PREMIUM/refs/heads/main/KEYS%20SYSTEM"))()
-                    {
-                        Title = "Confirm",
-                        Callback = function(v)
-                            print("Next Update,Plase Wait")
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function(v)
-                            print("Cancelled,Are You Sure?")
-                        end
-                    }
-                }
-            })
-        end
-    })
-
-    Tabs.Vip:AddButton({
-        Title = "RELEASE",
-        Description = "Beta Tester Script!",
-        Callback = function()
-            Window:Dialog({
-                Title = "Infinite yield",
-                Content = "PowerFull Script",
-                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Main/refs/heads/main/Windows"))()
-                    {
-                        Title = "Confirm",
-                        Callback = function(v)
-                            print("Next Update,Plase Wait")
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function(v)
-                            print("Cancelled,Are You Sure?")
-                        end
-                    }
-                }
-            })
-        end
-    })
-
-    Tabs.Upd:AddButton({
-        Title = "UPDATE 1",
-        Description = "100% FREE And No Key",
-        Callback = function()
-            Window:Dialog({
-                Title = "Infinite yield",
-                Content = "PowerFull Script",
-                Buttons = {loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Update/refs/heads/main/IOERHUB"))()
-                    {
-                        Title = "Confirm",
-                        Callback = function(v)
-                            print("Next Update,Plase Wait")
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function(v)
-                            print("Cancelled,Are You Sure?")
-                        end
-                    }
-                }
-            })
-        end
-    })
-
--- SaveManager (Allows you to have a configuration system)end
--- InterfaceManager (Allows you to have a interface managment system)
-
--- Hand the library over to our managers
-SaveManager:SetLibrary(Fluent)
-InterfaceManager:SetLibrary(Fluent)
-
--- Ignore keys that are used by ThemeManager.
--- (we dont want configs to save themes, do we?)
-SaveManager:IgnoreThemeSettings()
-
--- You can add indexes of elements the save manager should ignore
-SaveManager:SetIgnoreIndexes({})
-
--- use case for doing it this way:
--- a script hub could have themes in a global folder
--- and game configs in a separate folder per game
-InterfaceManager:SetFolder("FluentScriptHub")
-SaveManager:SetFolder("FluentScriptHub/specific-game")
-
-InterfaceManager:BuildInterfaceSection(Tabs.Settings)
-SaveManager:BuildConfigSection(Tabs.Settings)
-
-
-Window:SelectTab(1)
-
-Fluent:Notify({
-    Title = "Information",
-    Content = "The script has been loaded.",
-    Duration = 8
+Rayfield:Notify({
+   Title = "Notification Alert",
+   Content = "Thank You For Use This Scripts",
+   Duration = 5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
 })
 
--- You can use the SaveManager:LoadAutoloadConfig() to load a config
--- which has been marked to be one that auto loads!
-SaveManager:LoadAutoloadConfig()
+local MainSection = MVSD:CreateSection("IOER Hub Creator")
+local Paragraph = MVSD:CreateParagraph({Title = "🛠️ Builder", Content = "Thetecnologyz"})
+local Paragraph = MVSD:CreateParagraph({Title = "👨‍💻 Programmer", Content = "Thetecnologyz"})
+local Paragraph = MVSD:CreateParagraph({Title = "💡 Idea", Content = "rex_del2"})
+local Paragraph = MVSD:CreateParagraph({Title = "🔗 Link Script", Content = "pastebin.com/u/ty4rds"})
+local Paragraph = MVSD:CreateParagraph({Title = "🔍 Script Search", Content = "Youtube | Pastebin.com | Scriptblox | Rscripts | Google"})
+local Paragraph = MVSD:CreateParagraph({Title = "⚠️ important information", Content = "This script is still in testing!, if there are any bugs or anything like that, sorry."})
+local MainSection = Jail:CreateSection("Lastest Update With Version")
+local Paragraph = Jail:CreateParagraph({Title = "V2.0.75", Content = "New Ui"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.0.75", Content = "Fixed Bugs"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.0.75", Content = "Add FREE-RELEASE Script"})
 
-print("Upgrade Your Script To Be Able To Use 100% Of The Script")
+local Button = MainTab:CreateButton({
+   Name = "PREMIUM",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Rayfield/refs/heads/main/Mobile"))()
+   end,
+})
+
+local MainSection = MainTab:CreateSection("50% Script And No Keyless")
+local Button = MainTab:CreateButton({
+   Name = "FREE-RELEASE",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/FREE/refs/heads/main/IOER%20HUB%20FREE"))()
+   end,
+})
+
+local MainSection = Troll:CreateSection("100% Script And Keyless")
+local Button = Troll:CreateButton({
+   Name = "PREMIUM",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/PREMIUM/refs/heads/main/KEYS%20SYSTEM"))()
+   end,
+})
+
+local MainSection = Troll:CreateSection("Beta Tester, 100% Script")
+local Button = Troll:CreateButton({
+   Name = "BETA-TESTER",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/IOERHUB/Main/refs/heads/main/Windows"))()
+   end,
+})
+
+print("IOER HUB PC/LAPTOP loaded Successfully, Thanks for Using this script!")
 print("Created By IOER Hub, pastebin.com/u/ty4rds")
