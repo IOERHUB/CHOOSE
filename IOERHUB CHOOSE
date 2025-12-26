@@ -11,7 +11,7 @@ local Window = Rayfield:CreateWindow({
    },
 })
 
-local MVSD = Window:CreateTab("🧍 Creadit", nil)
+local MVSD = Window:CreateTab("🧍Information", nil)
 local MainTab = Window:CreateTab("📱 Mobile", nil)
 local Troll = Window:CreateTab("🖥️ Windows", nil)
 local Jail = Window:CreateTab("📰 Change Logs", nil)
@@ -40,9 +40,9 @@ local Paragraph = MVSD:CreateParagraph({Title = "🔗 Link Script", Content = "p
 local Paragraph = MVSD:CreateParagraph({Title = "🔍 Script Search", Content = "Youtube | Pastebin.com | Scriptblox | Rscripts | Google"})
 local Paragraph = MVSD:CreateParagraph({Title = "⚠️ important information", Content = "This script is still in testing!, if there are any bugs or anything like that, sorry."})
 local MainSection = Jail:CreateSection("Lastest Update With Version")
-local Paragraph = Jail:CreateParagraph({Title = "V2.0.75", Content = "New Ui"})
-local Paragraph = Jail:CreateParagraph({Title = "V2.0.75", Content = "Fixed Bugs"})
-local Paragraph = Jail:CreateParagraph({Title = "V2.0.75", Content = "Add FREE-RELEASE Script"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.0", Content = "Fixed Script Not Working"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.0", Content = "The Key System Has Been Replaced"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.0", Content = "More Detail"})
 
 local Button = MainTab:CreateButton({
    Name = "PREMIUM",
