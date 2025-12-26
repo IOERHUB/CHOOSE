@@ -43,6 +43,11 @@ local MainSection = Jail:CreateSection("Lastest Update With Version")
 local Paragraph = Jail:CreateParagraph({Title = "V2.1.0", Content = "Fixed Script Not Working"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.1.0", Content = "The Key System Has Been Replaced"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.1.0", Content = "More Detail"})
+local MainSection = Jail:CreateSection("Unreleased Scripts")
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.25", Content = "Fluent and Rayfield Scripts Will Be Separated"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.25", Content = "Add More Scripts"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.25", Content = "More Detail"})
+
 
 local Button = MainTab:CreateButton({
    Name = "PREMIUM",
