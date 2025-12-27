@@ -42,6 +42,9 @@ local MainSection = Jail:CreateSection("Lastest Update With Version")
 local Paragraph = Jail:CreateParagraph({Title = "V2.1.25", Content = "now mobile and windows scripts are combined"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.1.25", Content = "Add Script Infection, Area 51, Multi Tools, Vehiclefly"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.1.25", Content = "More Detail"})
+local MainSection = Jail:CreateSection("Unreleased")
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.50", Content = "Add More Scripts"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.50", Content = "More Detail"})
 
 local Paragraph = Troll:CreateParagraph({Title = "✅ Working All Device", Content = "This Script Can Be Used For All Devices"})
 local Button = Troll:CreateButton({
