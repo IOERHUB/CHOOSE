@@ -39,12 +39,12 @@ local Paragraph = MVSD:CreateParagraph({Title = "🔗 Link Script", Content = "p
 local Paragraph = MVSD:CreateParagraph({Title = "🔍 Script Search", Content = "Youtube | Pastebin.com | Scriptblox | Rscripts | Google"})
 local Paragraph = MVSD:CreateParagraph({Title = "⚠️ important information", Content = "This script is still in testing!, if there are any bugs or anything like that, sorry."})
 local MainSection = Jail:CreateSection("Lastest Update With Version")
-local Paragraph = Jail:CreateParagraph({Title = "V2.1.25", Content = "Now Rayfield Script is No Keyless"})
-local Paragraph = Jail:CreateParagraph({Title = "V2.1.25", Content = "Add Script Infection, Area 51, Multi Tools, Vehiclefly"})
-local Paragraph = Jail:CreateParagraph({Title = "V2.1.25", Content = "More Detail"})
-local MainSection = Jail:CreateSection("Unreleased")
-local Paragraph = Jail:CreateParagraph({Title = "V2.1.50", Content = "Add More Scripts"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.50", Content = "Add Main Scripts V2"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.50", Content = "Add Script Next>> | Back<< | Blind Shot | Brookhaven | Blox Fruits"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.1.50", Content = "More Detail"})
+local MainSection = Jail:CreateSection("Unreleased")
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.75", Content = "Add More Scripts"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.1.75", Content = "More Detail"})
 
 local Paragraph = Troll:CreateParagraph({Title = "✅ Working All Device", Content = "This Script Can Be Used For All Devices"})
 local Button = Troll:CreateButton({
