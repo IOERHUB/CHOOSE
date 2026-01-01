@@ -64,6 +64,8 @@ local Button = Troll:CreateButton({
    end,
 })
 
+local Paragraph = Troll:CreateParagraph({Title = "Main Scripts V3", Content = "Coming Soon!"})
+
 local MainSection = Troll:CreateSection("Script Fluent, Not Support for Mobile")
 local Paragraph = Troll:CreateParagraph({Title = "⚠️ Information", Content = "Fluent Scripts Cannot Be Used on Mobile Because the Scripts Are Too Large or Designed for Windows/Laptops"})
 local Button = Troll:CreateButton({
