@@ -78,8 +78,8 @@ local Paragraph = Info:CreateParagraph({Title = "Main - Scripts", Content = "⏪
 local Paragraph = Info:CreateParagraph({Title = "Main Scripts V2", Content = "⏪ Back | 🍇 Blox Fruits | 🏡 Brookhaven | 🧑‍🦯 Blind Shot | ⚒️ The Forge | 🔫 Flick | 👆 Race Clicker | 👵 Granny Multiplayer | 😶 GEF | 📦 One Block | ⛺ Survive On a Raft | 🎲 Aura Craft "})
 
 local MainSection = Info:CreateSection("Fluent Scripts - 27 Scripts")
-local Paragraph = Info:CreateParagraph({Title = "Main - Scripts", Content = "⏪ Back | Main | Jailbreak | Murderer Vs Sheriff | Infection Smile | Evade | Area 51 | The Strongest | Blade Ball | 99Night | Arsenal | Race Clicker | Pickaxe | Steal A Brainrot | Fish it | Blox Fruit | Settings"})
-local Paragraph = Info:CreateParagraph({Title = "Main Scripts V2", Content = "⏪ Back | Main | Murderer Vs Sheriff | Evade | Jailbreak | The Strongest | Race Clicker | Fish it | Fish it | Settings"})
+local Paragraph = Info:CreateParagraph({Title = "Main - Scripts", Content = "Coming Soon!"})
+local Paragraph = Info:CreateParagraph({Title = "Main Scripts V2", Content = "Coming Soon!"})
 
 print("IOER HUB PC/LAPTOP loaded Successfully, Thanks for Using this script!")
 print("Created By IOER Hub, pastebin.com/u/ty4rds")
