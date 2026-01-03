@@ -77,7 +77,7 @@ local MainSection = Info:CreateSection("Rayfield Scripts - 26 Scripts")
 local Paragraph = Info:CreateParagraph({Title = "Main - Scripts", Content = "⏪ Back | 🏠 Home | 🎯 Main Scripts | 🔒 Jailbreak | 🔫 MVSD | 💪 The Strongest | 🐟 Fish It | 🏃 Evade | 🌲99 Night | 🖐️ Steal A Brainrot | ⚽ Blade Ball | 💵 Pls Donate | 👽 Area 51 | 😄 Infection Smile "})
 local Paragraph = Info:CreateParagraph({Title = "Main Scripts V2", Content = "⏪ Back | 🍇 Blox Fruits | 🏡 Brookhaven | 🧑‍🦯 Blind Shot | ⚒️ The Forge | 🔫 Flick | 👆 Race Clicker | 👵 Granny Multiplayer | 😶 GEF | 📦 One Block | ⛺ Survive On a Raft | 🎲 Aura Craft "})
 
-local MainSection = Info:CreateSection("Fluent Scripts - 27 Scripts")
+local MainSection = Info:CreateSection("Fluent Scripts - ?? Scripts")
 local Paragraph = Info:CreateParagraph({Title = "Main - Scripts", Content = "Coming Soon!"})
 local Paragraph = Info:CreateParagraph({Title = "Main Scripts V2", Content = "Coming Soon!"})
 
