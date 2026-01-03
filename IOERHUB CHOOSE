@@ -80,6 +80,3 @@ local Paragraph = Info:CreateParagraph({Title = "Main Scripts V2", Content = "‚è
 local MainSection = Info:CreateSection("Fluent Scripts - ?? Scripts")
 local Paragraph = Info:CreateParagraph({Title = "Main - Scripts", Content = "Coming Soon!"})
 local Paragraph = Info:CreateParagraph({Title = "Main Scripts V2", Content = "Coming Soon!"})
-
-print("IOER HUB PC/LAPTOP loaded Successfully, Thanks for Using this script!")
-print("Created By IOER Hub, pastebin.com/u/ty4rds")
