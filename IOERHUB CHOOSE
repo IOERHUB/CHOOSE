@@ -48,7 +48,7 @@ local Paragraph = Jail:CreateParagraph({Title = "V2.2.70", Content = "Update Sel
 local MainSection = Jail:CreateSection("Unreleased")
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Add More Scripts"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Fixed Bugs"})
-local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Release Main - Scripts, Maybe"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Fixed print()"})
 
 local Paragraph = Troll:CreateParagraph({Title = "✅ Working All Device", Content = "This Script Can Be Used For All Devices"})
 local Button = Troll:CreateButton({
