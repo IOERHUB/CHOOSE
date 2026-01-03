@@ -45,7 +45,7 @@ local Paragraph = MVSD:CreateParagraph({Title = "⚠️ important information", 
 local MainSection = Jail:CreateSection("Lastest Update With Version")
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.70", Content = "Add Mismatch Version"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.70", Content = "Update Select Scripts"})
-local MainSection = Jail:CreateSection("Unreleased")
+local MainSection = Jail:CreateSection("Un-released")
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Add More Scripts"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Fixed Bugs"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Fixed print()"})
