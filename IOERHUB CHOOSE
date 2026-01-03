@@ -11,7 +11,7 @@ local Window = Rayfield:CreateWindow({
    },
 })
 
-local MVSD = Window:CreateTab("🧍Creator", nil)
+local MVSD = Window:CreateTab("🧍Creator Hub", nil)
 local Info = Window:CreateTab("📢 Information", nil)
 local Troll = Window:CreateTab("🖥️📱 Main Scripts", nil)
 local Jail = Window:CreateTab("📰 Change Logs", nil)
@@ -43,12 +43,12 @@ local Paragraph = MVSD:CreateParagraph({Title = "🔗 Link Script", Content = "p
 local Paragraph = MVSD:CreateParagraph({Title = "🔍 Script Search", Content = "Youtube | Pastebin.com | Scriptblox | Rscripts | Google"})
 local Paragraph = MVSD:CreateParagraph({Title = "⚠️ important information", Content = "This script is still in testing!, if there are any bugs or anything like that, sorry."})
 local MainSection = Jail:CreateSection("Lastest Update With Version")
-local Paragraph = Jail:CreateParagraph({Title = "V2.2.70", Content = "Add Mismatch Version"})
-local Paragraph = Jail:CreateParagraph({Title = "V2.2.70", Content = "Update Select Scripts"})
-local MainSection = Jail:CreateSection("Un-released")
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Add More Scripts"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Fixed Bugs"})
 local Paragraph = Jail:CreateParagraph({Title = "V2.2.85", Content = "Fixed print()"})
+local MainSection = Jail:CreateSection("Un-released")
+local Paragraph = Jail:CreateParagraph({Title = "V2.3.0", Content = "More Scripts"})
+local Paragraph = Jail:CreateParagraph({Title = "V2.3.0", Content = "Fixed Bugs"})
 
 local Paragraph = Troll:CreateParagraph({Title = "✅ Working All Device", Content = "This Script Can Be Used For All Devices"})
 local Button = Troll:CreateButton({
